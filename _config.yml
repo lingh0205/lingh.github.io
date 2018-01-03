@@ -10,10 +10,10 @@ baseurl: /
 # Website info
 title: LinGH
 description: The professional publishing platform
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+cover: /assets/images/blog-cover.jpg
+logo: /assets/images/blog-icon.png
+logo_dark: /assets/images/favicon.png
+favicon: /assets/images/favicon.png
 production_url: http://blog.lingh.vip/
 source_url: https://github.com/lingh.github.io/
 
