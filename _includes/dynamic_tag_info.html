@@ -1,5 +1,4 @@
 <!-- dynamically loading backgrounds for tags,  descriptions and page titles -->
-{{ tag }}
 {% for tag in site.data.tags %}
     {% if page.url contains tag[1].name %}
         {% assign cover = tag[1].cover %}
