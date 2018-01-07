@@ -13,7 +13,6 @@ logo: '/assets/images/ghost.png'
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
 <!-- #tag -->
-<h1>Just for test</h1>
 {% include dynamic_tag_info.html %}
 <header class="site-header outer {% if cover or page.cover %}" style="background-image: url({{ site.baseurl }}{% if cover %}{{ cover }}{% else %}{{ page.cover }}{% endif%}) {% else %}no-cover{% endif %}">
     <div class="inner">
