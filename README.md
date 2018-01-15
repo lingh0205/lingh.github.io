@@ -89,7 +89,7 @@ please log them on the [issue tracker](https://github.com/myJekyll/jasper2/issue
 
 Feel free pull-request your patches and fixes.
 
-## Thanks
+## Thanks!
 
 
 Many thanks to the Ghost team for all the design work. Also many thanks to all contributors,
