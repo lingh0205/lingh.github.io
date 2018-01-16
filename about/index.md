@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_about
 current: /
 title: About
 navigation: true
