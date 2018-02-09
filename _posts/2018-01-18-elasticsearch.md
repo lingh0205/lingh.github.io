@@ -11,7 +11,7 @@ subclass: 'post tag-getting-started'
 author: ghost
 ---
 
-Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
+Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # **[Elasticsearch索引内部原理最简洁的归纳](http://blog.csdn.net/lisi1129/article/details/79034067)**
 
