@@ -1,10 +1,10 @@
 ---
 layout: post
 current: post
-cover:  assets/images/welcome.jpg
+cover:  assets/images/mysql.jpg
 navigation: True
-title: Welcome to Ghost
-date: 2017-07-27 10:00:00
+title: Upgrade MySQL Server
+date: 2018-01-20 08:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
