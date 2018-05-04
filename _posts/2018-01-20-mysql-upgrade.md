@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  /assets/images/mysql.jpg
+cover:  assets/images/mysql.jpg
 navigation: True
 title: Upgrade MySQL Server
 date: 2018-01-20 08:00:00
