@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/elasticsearch.jpg
+cover:  /assets/images/elasticsearch.jpg
 navigation: True
 title: Build ElasticSearch Site
 date: 2018-02-08 18:00:00
