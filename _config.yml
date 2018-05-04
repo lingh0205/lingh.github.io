@@ -5,17 +5,17 @@ paginate: 100 # it will paginate after this number
 language: 'en-uk'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: /jasper2/
 
 # Website info
 title: LinGH
 description: The professional publishing platform
-cover: /assets/images/blog-cover.jpg
-logo: /assets/images/blog-icon.png
-logo_dark: /assets/images/favicon.png
-favicon: /assets/images/favicon.png
-production_url: http://blog.lingh.vip
-source_url: https://github.com/lingh.github.io/
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
+production_url: http://blog.lingh.vip/jasper2/
+source_url: https://github.com/jekyller/jasper2/
 
 # Social info
 navigation: True # show the navbar links
@@ -27,7 +27,7 @@ facebook: ghost # replace by your username
 
 # Disqus
 disqus: False
-disqus_shortname: myjekyll # replace with your disqus username
+disqus_shortname: jekyller # replace with your disqus username
 
 # Google Analytics
 google_analytics: UA-69281367-1 # replace with your GA tracking identifier
@@ -42,13 +42,12 @@ permalink: /:title
 
 # gems and other configs
 plugins: [jekyll-paginate, jekyll-feed]
-exclude: [vendor]
 
 feed:
   path: feed.xml
 
 # Additional settings available on the front-matter
-# Site logo in the index.md (as in demo.ghost.io)
+# Site logo in the index.html (as in demo.ghost.io)
 # Author's page cover in _layouts/author.html
 # The same for page.html and tag.html layouts
 # Post's page cover as a per-post basis _posts/...
@@ -67,20 +66,28 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: myJekyll
+username: jekyller
 repo: jasper2
 branch: master
-relative_source: ../jasper1/
-destination: ../jasper2/
-production_url:  https://myJekyll.github.io/jasper2/
-source_url:  https://github.com/myJekyll/jasper2/
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url:  http://blog.lingh.vip/jasper2/
+source_url:  https://github.com/jekyller/jasper2/
 
 exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
+  - assets/css
+  - node_modules
   - vendor
   - .travis.yml
+  - Gemfile
+  - Gemfile.lock
+  - GHOST.txt
+  - gulpfile.js
+  - LICENSE
+  - package.json
+  - Rakefile
+  - README.md
+  - script.py
+  - changelog.md
+  - "*.Rmd"
+  - .git*

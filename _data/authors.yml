@@ -1,12 +1,12 @@
 ghost:
-  username: lingh
-  name: LinGH
-  url_full: http://myJekyll.github.io/jasper2/
-  url: myJekyll.github.io/jasper2
+  username: ghost
+  name: Ghost
+  url_full: http://jekyller.github.io/jasper2/
+  url: jekyller.github.io/jasper2
   bio: The professional publishing platform
   picture: assets/images/ghost.png
-  facebook: lingh
-  twitter: trylingh
+  facebook: ghost
+  twitter: tryghost
   cover: False
 hannah:
   username: hannah
