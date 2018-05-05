@@ -13,4 +13,4 @@ fables:
 getting-started:
   name: getting-started
   description: False
-  cover: False
+  cover: assets/images/getting-started.jpg
