@@ -12,6 +12,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
+
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css" />
@@ -24,7 +25,7 @@
 
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
-
+{{ site.baseurl }}assets/built/screen.css
     <div class="site-wrapper">
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
         {{ content }}
