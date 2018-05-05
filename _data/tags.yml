@@ -5,7 +5,7 @@ speeches:
 fiction:
   name: fiction
   description: False
-  cover: False
+  cover: assets/images/fiction.jpg
 fables:
   name: fables
   description: A series of short stories that make you think.
