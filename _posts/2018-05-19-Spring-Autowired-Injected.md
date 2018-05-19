@@ -1,3 +1,16 @@
+---
+layout: post
+current: post
+cover:  assets/images/mysql.jpg
+navigation: True
+title: Spring-Autowired-Injected
+date: 2018-05-19 18:00:00
+tags: [Getting started]
+class: post-template
+subclass: 'post tag-getting-started'
+author: ghost
+---
+
 # Spring-Autowired-Injected
 
 ------
