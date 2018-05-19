@@ -1,3 +1,21 @@
+---
+layout: post
+current: post
+cover:  assets/images/mysql.jpg
+navigation: True
+title: Spring Autowired Injected
+date: 2018-05-18 08:00:00
+tags: [Getting started]
+class: post-template
+subclass: 'post tag-getting-started'
+author: ghost
+---
+
+Hey! Welcome to Ghost, it's great to have you :)
+
+We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
+
+
 # Spring-Autowired-Injected
 
 ------
