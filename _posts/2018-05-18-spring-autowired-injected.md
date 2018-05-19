@@ -1,20 +1,3 @@
----
-layout: post
-current: post
-cover:  assets/images/mysql.jpg
-navigation: True
-title: Spring Autowired Injected
-date: 2018-05-19 18:00:00
-tags: [Getting started]
-class: post-template
-subclass: 'post tag-getting-started'
-author: ghost
----
-
-Hey! Welcome to Ghost, it's great to have you :)
-
-We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
-
 # Spring-Autowired-Injected
 
 ------
@@ -41,11 +24,22 @@ We know that first impressions are important, so we've populated your new site w
 源码分析如下:
 > * 通过 `AbstractAutowireCapableBeanFactory` 中的 `populateBean` 方法处理 `Autowired Bean` 的注入
 > * 判断是否存在 `Autowired` 对象
+
+```java
 boolean hasInstAwareBpps = this.hasInstantiationAwareBeanPostProcessors();
+```
+
 > * 获取 `Autowired` 对象的属性描述符
+
+```java
 PropertyDescriptor[] filteredPds = this.filterPropertyDescriptorsForDependencyCheck(bw);
+```
+
 > * 调用 `AutowiredAnnotationBeanPostProcessor`.`postProcessPropertyValues` 方法进行属性的注入
+
+```java
 pvs = ibp.postProcessPropertyValues((PropertyValues)pvs, filteredPds, bw.getWrappedInstance(), beanName);
+```
 
 属性注入源码如下：
 
@@ -63,6 +57,7 @@ public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDesc
 ```
 
 > * 通过 `InjectionMetadata metadata = this.findAutowiringMetadata(bean.getClass());` 方法获取对应的Bean实例中property对应的属性信息
+
 ```java
 private InjectionMetadata findAutowiringMetadata(Class<?> clazz) {
         InjectionMetadata metadata = (InjectionMetadata)this.injectionMetadataCache.get(clazz);
@@ -80,7 +75,9 @@ private InjectionMetadata findAutowiringMetadata(Class<?> clazz) {
         return metadata;
     }
 ```
+
 > * 根据metadata信息进行属性的注入
+
 ```java
 public void inject(Object target, String beanName, PropertyValues pvs) throws Throwable {
         if (!this.injectedElements.isEmpty()) {
@@ -106,11 +103,14 @@ public void inject(Object target, String beanName, PropertyValues pvs) throws Th
 
 ### 问题一：扫描器配置错误
 spring配置文件中必须打开对应的扫描开关，并且扫描路径包含对应的类
+
 ```xml
     <context:annotation-config/>
     <context:component-scan base-package="com.xxx.xxx"/>
 ```
+
 web.xml中需配置spring初始化监听器，并指定配置文件路径
+
 ```xml
     <context-param>
         <param-name>contextConfigLocation</param-name>
