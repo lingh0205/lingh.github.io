@@ -114,10 +114,11 @@ public void inject(Object target, String beanName, PropertyValues pvs) throws Th
 ```
 
 ## 注入Bean报错NullPointException原因总结
-1）扫描器配置错误
-2）父子容器问题
-3）构造方法、构造代码库中使用注入的bean
-4）new对象（未被spring托管）
+
+> 1）扫描器配置错误
+> 2）父子容器问题
+> 3）构造方法、构造代码库中使用注入的bean
+> 4）new对象（未被spring托管）
 
 ### 问题一：扫描器配置错误
 spring配置文件中必须打开对应的扫描开关，并且扫描路径包含对应的类
