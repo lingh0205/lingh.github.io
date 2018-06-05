@@ -1,0 +1,29 @@
+---
+layout: default
+current: page
+class: page-template
+disqus: false
+---
+
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer">
+    <div class="inner">
+        {% include site-nav.html %}
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <iframe src="http://blog.lingh.vip:8080/" width="100%" height="1200" align="middle" id="tabiframe0">
+    </iframe>
+</main>
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+{% include page-scripts.html %}
