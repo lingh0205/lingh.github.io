@@ -20,9 +20,27 @@ into the {body} of the default.hbs template -->
 <!-- #post -->
 
 <main id="site-main" class="site-main outer" role="main">
-    <iframe src="http://blog.lingh.vip:8080/" width="100%" height="1200" align="middle" id="tabiframe0">
-    </iframe>
+    <div class="inner">
+
+        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
+
+            <!--<header class="post-full-header">-->
+                <!--<h1 class="post-full-title">{{ page.title }}</h1>-->
+            <!--</header>-->
+
+            <!--{% if page.cover %}-->
+            <!--<figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">-->
+            <!--</figure>-->
+            <!--{% endif %}-->
+
+            <iframe src="http://blog.lingh.vip:8080/" width="100%" height="1200" align="middle" id="tabiframe0">
+            </iframe>
+
+        </article>
+
+    </div>
 </main>
+
 <!-- /post -->
 
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
