@@ -11,6 +11,25 @@ into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
 <header class="site-header outer">
+<link rel="stylesheet" href="https://pandao.github.io/editor.md/examples/css/style.css" /> 
+  <link rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../css/editormd.css" /> 
+  <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" /> 
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/codemirror.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/addon/dialog/dialog.css" />
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/addon/search/matchesonscrollbar.css" />
+  <script id="-lib-codemirror-codemirror-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/codemirror.min.js"></script>
+  <script id="-lib-codemirror-modes-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/modes.min.js"></script>
+  <script id="-lib-codemirror-addons-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/addons.min.js"></script>
+  <script id="-lib-marked-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/marked.min.js"></script>
+  <script id="-lib-prettify-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/prettify.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/codemirror.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/addon/dialog/dialog.css" />
+  <link type="text/css" rel="stylesheet" href="https://pandao.github.io/editor.md/examples/../lib/codemirror/addon/search/matchesonscrollbar.css" />
+  <script id="https:-pandao-github-io-editor-md-examples-lib-codemirror-codemirror-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/codemirror.min.js"></script>
+  <script id="https:-pandao-github-io-editor-md-examples-lib-codemirror-modes-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/modes.min.js"></script>
+  <script id="https:-pandao-github-io-editor-md-examples-lib-codemirror-addons-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/codemirror/addons.min.js"></script>
+  <script id="https:-pandao-github-io-editor-md-examples-lib-marked-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/marked.min.js"></script>
+  <script id="https:-pandao-github-io-editor-md-examples-lib-prettify-min" type="text/javascript" src="https://pandao.github.io/editor.md/examples/../lib/prettify.min.js"></script>
     <div class="inner">
         {% include site-nav.html %}
     </div>
@@ -20,26 +39,470 @@ into the {body} of the default.hbs template -->
 <!-- #post -->
 
 <main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
+    <div id="layout"> 
+   <div onclick="submit()"> 
+    <div id="test-editormd" class="editormd editormd-vertical edit-div" style="margin-top: 20px"> 
+     <!-- Custom textarea name attribute <textarea style="display:none;" name="test-textarea-name"> --> 
+     <textarea id="markdown" style="display:none;" class="editormd-markdown-textarea" placeholder="Enjoy Markdown! coding now..." name="test-editormd-markdown-doc"></textarea>
+     <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-empty" style="font-size: 13px; width: 467px; margin-top: 78px; height: 561px;">
+      <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 51px;">
+       <textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea>
+      </div>
+      <div class="CodeMirror-vscrollbar" cm-not-content="true" style="bottom: 0px;">
+       <div style="min-width: 1px; height: 0px;"></div>
+      </div>
+      <div class="CodeMirror-hscrollbar" cm-not-content="true">
+       <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+      </div>
+      <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+      <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+      <div class="CodeMirror-scroll" tabindex="-1">
+       <div class="CodeMirror-sizer" style="margin-left: 39px; margin-bottom: -7px; border-right-width: 23px; min-height: 30px; padding-right: 0px; padding-bottom: 0px;">
+        <div style="position: relative; top: 0px;">
+         <div class="CodeMirror-lines">
+          <div style="position: relative; outline: none;">
+           <pre class="CodeMirror-placeholder" style="height: 0px; overflow: visible;">Enjoy Markdown! coding now...</pre>
+           <div class="CodeMirror-measure">
+            <pre>x</pre>
+            <div class="CodeMirror-linenumber CodeMirror-gutter-elt">
+             <div>
+              1
+             </div>
+            </div>
+           </div>
+           <div class="CodeMirror-measure">
+            <pre><span style="padding-right: 0.1px;"><span class="cm-header cm-header-3">### End</span></span></pre>
+           </div>
+           <div style="position: relative; z-index: 1;"></div>
+           <div class="CodeMirror-cursors" style="visibility: hidden;">
+            <div class="CodeMirror-cursor" style="left: 12px; top: 0px; height: 22px;">
+             &nbsp;
+            </div>
+           </div>
+           <div class="CodeMirror-code" style="">
+            <div class="CodeMirror-activeline" style="position: relative;">
+             <div class="CodeMirror-activeline-background CodeMirror-linebackground"></div>
+             <div class="CodeMirror-gutter-wrapper" style="left: -39px; width: 39px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">
+               1
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div style="position: absolute; height: 23px; width: 1px; top: 30px;"></div>
+       <div class="CodeMirror-gutters" style="height: 581px;">
+        <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div>
+        <div class="CodeMirror-gutter CodeMirror-foldgutter"></div>
+       </div>
+      </div>
+     </div>
+     <div class="CodeMirror cm-s-default CodeMirror-wrap" style="font-size: 13px; width: 467px; margin-top: 78px; height: 561px;">
+      <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 54px;">
+       <textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea>
+      </div>
+      <div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px;">
+       <div style="min-width: 1px; height: 10021px;"></div>
+      </div>
+      <div class="CodeMirror-hscrollbar" cm-not-content="true">
+       <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+      </div>
+      <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+      <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+      <div class="CodeMirror-scroll" tabindex="-1">
+       <div class="CodeMirror-sizer" style="margin-left: 42px; margin-bottom: -7px; border-right-width: 23px; min-height: 10018px; padding-right: 7px; padding-bottom: 0px;">
+        <div style="position: relative; top: 0px;">
+         <div class="CodeMirror-lines">
+          <div style="position: relative; outline: none;">
+           <div class="CodeMirror-measure">
+            <span><span>​</span>x</span>
+           </div>
+           <div class="CodeMirror-measure"></div>
+           <div style="position: relative; z-index: 1;"></div>
+           <div class="CodeMirror-cursors" style="">
+            <div class="CodeMirror-cursor" style="left: 12px; top: 0px; height: 22px;">
+             &nbsp;
+            </div>
+           </div>
+           <div class="CodeMirror-code" style="">
+            <div class="CodeMirror-activeline" style="position: relative;">
+             <div class="CodeMirror-activeline-background CodeMirror-linebackground"></div>
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               1
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-header cm-header-4">#### Get value</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               2
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               3
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;">每个 Editor.md 的 ID 元素下都有一个保存 Markdown 源码的 Textarea，你也可以通过设置开启另一个保存 HTML 源码的 Textarea，可以按需要获取相应的值，如下：</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               4
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               5
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">```html</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               6
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;editormd&quot;</span> <span class="cm-attribute">id</span>=<span class="cm-string">&quot;$id&quot;</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               7
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">textarea</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;editormd-markdown-textarea&quot;</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;$id-markdown-doc&quot;</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">textarea</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               8
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               9
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-comment">&lt;!-- html textarea 需要开启配置项 saveHTMLToTextarea == true --&gt;</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               10
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">textarea</span> <span class="cm-attribute">class</span>=<span class="cm-string">&quot;editormd-html-textarea&quot;</span> <span class="cm-attribute">name</span>=<span class="cm-string">&quot;$id-html-code&quot;</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">textarea</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               11
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               12
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">```</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               13
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               14
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-header cm-header-4">#### Example</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               15
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               16
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">```javascript</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               17
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-keyword">var</span> <span class="cm-variable">testEditor</span> <span class="cm-operator">=</span> <span class="cm-variable">editormd</span>(<span class="cm-string">&quot;test-editormd&quot;</span>, {</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               18
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">width</span>  : <span class="cm-string">&quot;90%&quot;</span>,</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               19
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">height</span> : <span class="cm-number">640</span>,</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               20
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">path</span> &nbsp; : <span class="cm-string">&quot;../lib/&quot;</span>,</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               21
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"> &nbsp;  <span class="cm-property">saveHTMLToTextarea</span> : <span class="cm-atom">true</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               22
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;">});</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               23
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               24
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">testEditor</span>.<span class="cm-property">getMarkdown</span>(); &nbsp; &nbsp; &nbsp; <span class="cm-comment">// 获取 Markdown 源码</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               25
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">testEditor</span>.<span class="cm-property">getHTML</span>(); &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="cm-comment">// 获取 Textarea 保存的 HTML 源码</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               26
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-variable">testEditor</span>.<span class="cm-property">getPreviewedHTML</span>();  <span class="cm-comment">// 获取预览窗口里的 HTML，在开启 watch 且没有开启 saveHTMLToTextarea 时使用</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               27
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">```</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               28
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               29
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-header cm-header-4">#### Backend get form value</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               30
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               31
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;">假设编辑器 ID 为 <span class="cm-comment">`test-editormd`</span>，以 PHP 为例：</span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               32
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               33
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">```php</span></span></pre>
+            </div>
+            <div style="position: relative;">
+             <div class="CodeMirror-gutter-wrapper" style="left: -42px; width: 42px;">
+              <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 23px;">
+               34
+              </div>
+             </div>
+             <pre class=""><span style="padding-right: 0.1px;"><span class="cm-meta">&lt;?php</span></span></pre>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div style="position: absolute; height: 23px; width: 1px; top: 10018px;"></div>
+       <div class="CodeMirror-gutters" style="height: 10041px;">
+        <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 31px;"></div>
+        <div class="CodeMirror-gutter CodeMirror-foldgutter"></div>
+       </div>
+      </div>
+     </div> 
+     <a href="javascript:;" class="fa fa-close editormd-preview-close-btn"></a> 
+     <textarea class="editormd-html-textarea editormd-markdown-textarea" name="test-editormd-html-code" placeholder="Enjoy Markdown! coding now..."></textarea> 
+     <div class="editormd-preview" style="display: block; width: 466px; top: 78px; height: 561px;">
+      <div class="markdown-body editormd-preview-container" previewcontainer="true" style="padding: 20px;"></div>
+     </div> 
+     <div class="editormd-container-mask" style="display: none;"></div> 
+     <div class="editormd-mask"></div>
+     <div class="editormd-toolbar" style="display: block;">
+      <div class="editormd-toolbar-container">
+       <ul class="editormd-menu">
+        <li><a href="javascript:;" title="撤销（Ctrl+Z）" unselectable="on"><i class="fa fa-undo" name="undo" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="重做（Ctrl+Y）" unselectable="on"><i class="fa fa-repeat" name="redo" unselectable="on"></i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="粗体" unselectable="on"><i class="fa fa-bold" name="bold" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="删除线" unselectable="on"><i class="fa fa-strikethrough" name="del" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="斜体" unselectable="on"><i class="fa fa-italic" name="italic" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="引用" unselectable="on"><i class="fa fa-quote-left" name="quote" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="将每个单词首字母转成大写" unselectable="on"><i class="fa" name="ucwords" style="font-size:20px;margin-top: -3px;">Aa</i></a></li>
+        <li><a href="javascript:;" title="将所选转换成大写" unselectable="on"><i class="fa fa-font" name="uppercase" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="将所选转换成小写" unselectable="on"><i class="fa" name="lowercase" style="font-size:24px;margin-top: -10px;">a</i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="标题1" unselectable="on"><i class="fa editormd-bold" name="h1" unselectable="on">H1</i></a></li>
+        <li><a href="javascript:;" title="标题2" unselectable="on"><i class="fa editormd-bold" name="h2" unselectable="on">H2</i></a></li>
+        <li><a href="javascript:;" title="标题3" unselectable="on"><i class="fa editormd-bold" name="h3" unselectable="on">H3</i></a></li>
+        <li><a href="javascript:;" title="标题4" unselectable="on"><i class="fa editormd-bold" name="h4" unselectable="on">H4</i></a></li>
+        <li><a href="javascript:;" title="标题5" unselectable="on"><i class="fa editormd-bold" name="h5" unselectable="on">H5</i></a></li>
+        <li><a href="javascript:;" title="标题6" unselectable="on"><i class="fa editormd-bold" name="h6" unselectable="on">H6</i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="无序列表" unselectable="on"><i class="fa fa-list-ul" name="list-ul" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="有序列表" unselectable="on"><i class="fa fa-list-ol" name="list-ol" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="横线" unselectable="on"><i class="fa fa-minus" name="hr" unselectable="on"></i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="链接" unselectable="on"><i class="fa fa-link" name="link" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="引用链接" unselectable="on"><i class="fa fa-anchor" name="reference-link" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="添加图片" unselectable="on"><i class="fa fa-picture-o" name="image" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="行内代码" unselectable="on"><i class="fa fa-code" name="code" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="预格式文本 / 代码块（缩进风格）" unselectable="on"><i class="fa fa-file-code-o" name="preformatted-text" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="代码块（多语言风格）" unselectable="on"><i class="fa fa-file-code-o" name="code-block" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="添加表格" unselectable="on"><i class="fa fa-table" name="table" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="日期时间" unselectable="on"><i class="fa fa-clock-o" name="datetime" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="Emoji表情" unselectable="on"><i class="fa fa-smile-o" name="emoji" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="HTML实体字符" unselectable="on"><i class="fa fa-copyright" name="html-entities" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="插入分页符" unselectable="on"><i class="fa fa-newspaper-o" name="pagebreak" unselectable="on"></i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="跳转到行" unselectable="on"><i class="fa fa-terminal" name="goto-line" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="关闭实时预览" unselectable="on"><i class="fa fa-eye-slash" name="watch" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="全窗口预览HTML（按 Shift + ESC还原）" unselectable="on"><i class="fa fa-desktop" name="preview" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="全屏（按ESC还原）" unselectable="on"><i class="fa fa-arrows-alt" name="fullscreen" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="清空" unselectable="on"><i class="fa fa-eraser" name="clear" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="搜索" unselectable="on"><i class="fa fa-search" name="search" unselectable="on"></i></a></li>
+        <li class="divider" unselectable="on">|</li>
+        <li><a href="javascript:;" title="使用帮助" unselectable="on"><i class="fa fa-question-circle" name="help" unselectable="on"></i></a></li>
+        <li><a href="javascript:;" title="关于Editor.md" unselectable="on"><i class="fa fa-info-circle" name="info" unselectable="on"></i></a></li>
+       </ul>
+      </div>
+     </div>
+     <a href="javascript:;" class="fa fa-close editormd-preview-close-btn"></a> 
+     <textarea class="editormd-html-textarea" name="test-editormd-html-code"></textarea> 
+     <div class="editormd-preview" style="display: block; width: 466px; top: 78px; height: 561px;">
+      <div class="markdown-body editormd-preview-container" previewcontainer="true" style="padding: 20px;"></div>
+     </div> 
+     <div class="editormd-container-mask" style="display: none;"></div> 
+     <div class="editormd-mask"></div>
+    </div> 
+    <!--<div style="width:90%;margin: 10px auto;">
+                    <input type="submit" name="submit" onclick="submit()" value="提交表单 Submit" style="padding: 5px;"> 
+                </div>--> 
+   </div> 
+  </div> 
+  <script src="https://pandao.github.io/editor.md/examples/js/jquery.min.js"></script> 
+  <script src="https://pandao.github.io/editor.md/examples/../editormd.js"></script> 
+  <script type="text/javascript">
+            $(function() {
+                $.get("https://pandao.github.io/editor.md/examples/test.md", function(md) {
+                    var testEditor = editormd("test-editormd", {
+                        width  : "90%",
+                        height : "70%",
+                        path   : "https://pandao.github.io/editor.md/examples/../lib/",
+                        appendMarkdown : md,
+                        saveHTMLToTextarea : true
+                    });
+                });
 
-        <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
-
-            <!--<header class="post-full-header">-->
-                <!--<h1 class="post-full-title">{{ page.title }}</h1>-->
-            <!--</header>-->
-
-            <!--{% if page.cover %}-->
-            <!--<figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">-->
-            <!--</figure>-->
-            <!--{% endif %}-->
-
-            <iframe src="http://blog.lingh.vip:8080/" width="100%" height="1200" align="middle" id="tabiframe0">
-            </iframe>
-
-        </article>
-
-    </div>
-</main>
+                //testEditor.getMarkdown();       // 获取 Markdown 源码
+                //testEditor.getHTML();           // 获取 Textarea 保存的 HTML 源码
+                //testEditor.getPreviewedHTML();  // 获取预览窗口里的 HTML，在开启 watch 且没有开启 saveHTMLToTextarea 时使用
+            });
+        </script> 
+		</main>
 
 <!-- /post -->
 
