@@ -3,7 +3,7 @@ layout: post
 current: post
 cover:  assets/images/mysql.jpg
 navigation: True
-title: Spring Autowired Injected
+title: GoLang gorouting
 date: 2018-06-18 08:00:00
 tags: [Getting started]
 class: post-template
@@ -12,10 +12,14 @@ author: ghost
 ---
 
 我们都知道Go语言是原生支持语言级并发的，这个并发的最小逻辑单元就是goroutine。  
-goroutine就是Go语言提供的一种用户态线程，当然这种用户态线程是跑在内核级线程之上的。当我们创建了很多的goroutine，并且它们都是跑在同一个内核线程之上的时候，就需要一个调度器来维护这些goroutine，确保所有的goroutine都使用cpu，并且是尽可能公平的使用cpu资源。
+
+goroutine就是Go语言提供的一种用户态线程，当然这种用户态线程是跑在内核级线程之上的。当我们创建了很多的goroutine，并且它们都是跑在同一个内核线程之上的时候，就需要一个调度器来维护这些goroutine，确保所有的goroutine都使用cpu，并且是尽可能公平的使用cpu资源。  
 
 
 # Golang CSP并发模型
+
+------
+
 ## CSP并发模型
 **CSP模型** 是上个世纪七十年代提出的，用于描述两个独立的并发实体通过共享的通讯 **channel(管道)** 进行通信的并发模型。 CSP中 channel 是第一类对象，它不关注发送消息的实体，而关注与发送消息时使用的channel。
 
