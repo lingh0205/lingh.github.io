@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/mysql.jpg
 navigation: True
 title: Spring Autowired Injected
-date: 2018-05-18 08:00:00
+date: 2018-06-18 08:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
