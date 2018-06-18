@@ -11,7 +11,11 @@ subclass: 'post tag-getting-started'
 author: ghost
 ---
 
-goroutine就是Go语言提供的一种用户态线程，当然这种用户态线程是跑在内核级线程之上的。当我们创建了很多的goroutine，并且它们都是跑在同一个内核线程之上的时候，就需要一个调度器来维护这些goroutine，确保所有的goroutine都使用cpu，并且是尽可能公平的使用cpu资源。  
+
+Hey! Welcome to Ghost, it's great to have you :)
+
+We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
+
 
 
 # Golang CSP并发模型
