@@ -11,9 +11,7 @@ subclass: 'post tag-getting-started'
 author: LinGH
 ---
 
-Hey! Welcome to Ghost, it's great to have you :)
-
-We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
+Reactive Spring represents a platform wide initiative to deliver reactive support at every level of the development stack—web, security, data, messaging, etc. Spring Framework 5 delivers on this vision by providing a new reactive web stack called, Spring WebFlux, which is offered side-by-side with the traditional Spring MVC web stack. The choice is yours!
 
 
 # Spring-Autowired-Injected
