@@ -1,14 +1,14 @@
 ---
 layout: post
 current: post
-cover:  assets/images/mysql.jpg
+cover:  assets/images/spring.jpg
 navigation: True
-title: Spring Autowired Injected
+title: Spring Autowired 依赖注入
 date: 2018-05-18 08:00:00
 tags: [Getting started]
 class: post-template
 subclass: 'post tag-getting-started'
-author: ghost
+author: LinGH
 ---
 
 Hey! Welcome to Ghost, it's great to have you :)
